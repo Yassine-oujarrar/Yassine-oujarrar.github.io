@@ -1,0 +1,129 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Saira:wght@700&display=swap');
+
+
+:root{
+    --primary-color: #033b4a;
+    --secondary-color: #20c997;
+    --gray: #4a4a4d;
+    --bg-primary: #ecf0f3;
+
+}
+* {
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Poppins', sans-serif;
+}
+
+h1, 
+h2{
+    font-family: 'Saira', sans-serif;
+}
+
+ul {
+    list-style: none;
+}
+a {
+    text-decoration: none;
+}
+
+/*utility classes*/
+.text-primary {
+    color: var(--secondary-color);
+}
+
+.btn_primary {
+    background-color: var(--secondary-color);
+    color: #fff;
+    padding: 8px 20px;
+    font-size: 14px;
+    border-radius: 10px;
+    transition: all 0.3s ease;
+}
+
+.btn_primary:hover {
+    background-color: #15a076;
+}
+/*header start*/
+header  {
+    background-color: var(--bg-primary);
+    height: 100vh;
+}
+header .navbar {
+    background-color: #fff;
+    border-bottom: 1px solid #ccc;
+    position: fixed;
+    width: 100%;    
+}
+header .navbar nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1100px;
+    margin: auto;
+    padding: 1.5rem 2rem;
+
+}
+#home #logo{
+    color: var(--primary-color);
+    font-size: 24px;
+    font-weight: 600;
+}
+header .navbar nav ul{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+header .navbar nav ul a{
+    margin: 0 15px;
+    color: var(--primary-color);
+    font-weight: 600;
+}
+header .header-content{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 1100px;
+    margin: auto;
+    padding: 5rem 2rem 0;
+    height: 100%;
+}
+header .header-content .content-text{
+    margin-bottom: 5rem;
+}
+.content-text .btn_primary{
+    flex: 1;
+    margin-right: 20px;
+}
+
+
+header .header-content img{
+    min-width: 200px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+
+}
+
+#home .header-content p span {
+    font-weight: 700;
+    font-size: 20px;
+}
+#home .header-content h1 {
+    font-size: 60px;
+    color: var(--primary-color);
+    text-shadow: 3px 3px 3px rgba(0,0 , 0, 0.2);
+}
+#home .header-content .title {
+    font-size: 20px;
+    color: var(--primary-color);
+    margin: 10px 0;
+    font-weight: 500;
+    margin: 2rem 0rem ;
+}
+
+/*header end*/
