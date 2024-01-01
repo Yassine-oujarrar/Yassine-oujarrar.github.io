@@ -31,6 +31,13 @@ a {
 }
 
 /*utility classes*/
+.container {
+    max-width: 1100px;
+    margin: auto;
+    padding: 0 2rem;
+
+}
+
 .text-primary {
     color: var(--secondary-color);
 }
@@ -98,11 +105,12 @@ header .header-content .content-text{
 .content-text .btn_primary{
     flex: 1;
     margin-right: 20px;
+    font-size: 20px;
 }
 
 
 header .header-content img{
-    min-width: 200px;
+    width: 550px;
     display: flex;
     flex-direction: column;
     align-items: flex-end;
@@ -123,7 +131,53 @@ header .header-content img{
     color: var(--primary-color);
     margin: 10px 0;
     font-weight: 500;
-    margin: 2rem 0rem ;
+    margin: 2rem 0 0 ;
+}
+#home .header-content .social {
+    margin: 0 0 2rem;
+}
+#home .header-content .social a i {
+    font-size: 50px;
+    padding: 10px;
+    color: #033b4a;
 }
 
 /*header end*/
+
+/*about start*/
+#about {
+    padding: 6rem 0rem;
+}
+
+#about h2 {
+    text-align: center;
+    font-size: 45px;
+    color: var(--primary-color);
+    font-weight: 600;
+
+}
+#about hr {
+    width: 220px;
+    height: 3px;
+    background-color: var(--secondary-color);
+    margin: 5px auto 0;
+}
+#about .about-content{
+    margin-top: 4rem;
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    column-gap: 3rem;
+}
+
+#about .about-content .col-1 h3 {
+    font-size: 28px;
+    color: var(--primary-color);
+    margin-bottom: 20px;
+
+}
+#about .about-content .col-2 p{
+    margin-bottom: 20px;
+    margin-top: 10px;
+
+}
+/*about end*/
