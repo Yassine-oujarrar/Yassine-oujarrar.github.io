@@ -181,4 +181,22 @@ header .header-content img{
     padding-bottom: 10px;
     border-bottom: 1px solid #ddd;
 }
+.circular-progress {
+    position: relative;
+    height: 250px;
+    width: 250px;
+    border-radius: 50%;
+    background-color: #f0ff;
+    background: conic-gradient(#7d2ae8 3.6deg, #ededed 0deg);
+
+}
+.circular-progress ::before{
+    content: "";
+    position: absolute;
+    height: 210px;
+    width: 210px;
+    border-radius: 50%;
+    background-color: #f0ff;
+
+}
 /*about end*/
