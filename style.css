@@ -178,6 +178,7 @@ header .header-content img{
 #about .about-content .col-2 p{
     margin-bottom: 20px;
     margin-top: 10px;
-
+    padding-bottom: 10px;
+    border-bottom: 1px solid #ddd;
 }
 /*about end*/
