@@ -145,18 +145,18 @@ header .header-content img{
 /*header end*/
 
 /*about start*/
-#about {
+#about, #skills{
     padding: 6rem 0rem;
 }
 
-#about h2 {
+#about h2, #skills h2 {
     text-align: center;
     font-size: 45px;
     color: var(--primary-color);
     font-weight: 600;
 
 }
-#about hr {
+#about hr, #skills hr {
     width: 220px;
     height: 3px;
     background-color: var(--secondary-color);
@@ -181,22 +181,24 @@ header .header-content img{
     padding-bottom: 10px;
     border-bottom: 1px solid #ddd;
 }
-.circular-progress {
+.skills-content{
+    width: 160px;
+    height: 160px;
     position: relative;
-    height: 250px;
-    width: 250px;
-    border-radius: 50%;
-    background-color: #f0ff;
-    background: conic-gradient(#7d2ae8 3.6deg, #ededed 0deg);
-
 }
-.circular-progress ::before{
-    content: "";
-    position: absolute;
-    height: 210px;
-    width: 210px;
+.outer{
+    width: 160px;
+    height: 160px;
+    padding: 20px;
+    box-shadow: 0 0 50px rgba(0,0,0,0.15);
     border-radius: 50%;
-    background-color: #f0ff;
-
 }
+.inner{
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    box-shadow: inset 4px 4px 6px -1px rgba(0,0 , 0, 0.2), inset -4px
+    -4px 6px -1px rgba(255,255,255,0.7);
+}
+
 /*about end*/
