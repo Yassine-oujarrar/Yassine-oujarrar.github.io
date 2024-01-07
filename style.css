@@ -181,10 +181,13 @@ header .header-content img{
     padding-bottom: 10px;
     border-bottom: 1px solid #ddd;
 }
+/*about end*/
+
+/*skills start*/
 .skills-content{
     width: 160px;
     height: 160px;
-    position: relative;
+    position: relative !important;
 }
 .outer{
     width: 160px;
@@ -197,8 +200,26 @@ header .header-content img{
     width: 120px;
     height: 120px;
     border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     box-shadow: inset 4px 4px 6px -1px rgba(0,0 , 0, 0.2), inset -4px
-    -4px 6px -1px rgba(255,255,255,0.7);
+    -4px 6px -1px rgba(255,255,255,0.7),
+    -0.5px -0.5px 0px rgba(255,255,255,1), 0.5px 0.5px 0px
+     rgba(0,0,0,0.15), 0px 12px 10px -10px rgba(0,0,0,0.05);
 }
+#number{
+    font-weight: 600;
+    color: #555;
+}
+circle{
+    fill : none;
+    stroke: url(#GradientColor);
+    stroke-width: 20px;
 
-/*about end*/
+}
+svg{
+    position: absolute;
+    top: 0;
+}
+/*skills end*/
