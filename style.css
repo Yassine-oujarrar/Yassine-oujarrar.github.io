@@ -216,10 +216,17 @@ circle{
     fill : none;
     stroke: url(#GradientColor);
     stroke-width: 20px;
-
+    stroke-dasharray: 450;
+    stroke-dashoffset: 200;
 }
 svg{
     position: absolute;
     top: 0;
+    left: 0;
+}
+.alldonuts{
+    display: flex;
+    justify-content: space-around;
+    margin-top: 4rem;
 }
 /*skills end*/
