@@ -184,6 +184,14 @@ header .header-content img{
 /*about end*/
 
 /*skills start*/
+
+#skills{
+    background-color: var(--bg-primary);
+}
+#skills h2{
+    font-family: 'Poppins', sans-serif;
+
+}
 .skills-content{
     width: 160px;
     height: 160px;
@@ -228,5 +236,21 @@ svg{
     display: flex;
     justify-content: space-around;
     margin-top: 4rem;
+}
+#skills .skills-section .alldonuts{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    align-items: center;
+    text-align: center;
+}
+#skills .skills-section .alldonuts .skills-content{
+    color: #033b4a;
+    margin: 30px;
+    font-size: 13px;
+    font-weight: 600;
+}
+#skills .skills-section .alldonuts .skills-content:hover{
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    border-radius: 100px;
 }
 /*skills end*/
