@@ -1,7 +1,7 @@
 function startAnimationWhenVisible(entries) {
     entries.forEach(entry => {
         if (entry.isIntersecting) {
-            entry.target.classList.add('start-animation'); // Ajoute une classe pour déclencher l'animation
+            entry.target.classList.add('start-animation'); 
         }
     });
 }
