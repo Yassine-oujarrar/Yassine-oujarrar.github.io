@@ -50,9 +50,25 @@ a {
     border-radius: 10px;
     transition: all 0.3s ease;
 }
+.btn_secondary{
+    background-color: white;
+    color: gray;
+    padding: 8px 20px;
+    font-size: 14px;
+    border-radius: 10px;
+    transition: all 0.3s ease;
+    border: 2px solid gray;
+    margin-left: auto;
+
+}
+
 
 .btn_primary:hover {
     background-color: #15a076;
+}
+.btn_secondary:hover{
+    background-color: gray;
+    color: white;
 }
 /*header start*/
 header  {
@@ -335,5 +351,17 @@ svg{
 
 .start-animation {
     opacity: 1; 
+}
+/*skills end*/
+
+/*projects start*/
+
+#projects hr {
+    margin: 1rem 0;
+    color: inherit;
+    border: 0;
+    border-top: 1px solid;
+    opacity: .25;
+    
 }
 
