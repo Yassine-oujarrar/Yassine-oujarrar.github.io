@@ -58,7 +58,6 @@ a {
     border-radius: 10px;
     transition: all 0.3s ease;
     border: 2px solid gray;
-    margin-left: auto;
 
 }
 
@@ -161,18 +160,18 @@ header .header-content img{
 /*header end*/
 
 /*about start*/
-#about, #skills{
+#about, #skills, #projects{
     padding: 6rem 0rem;
 }
 
-#about h2, #skills h2 {
+#about h2, #skills h2, #projects h2{
     text-align: center;
     font-size: 45px;
     color: var(--primary-color);
     font-weight: 600;
 
 }
-#about hr, #skills hr {
+#about hr, #skills hr, #projects hr{
     width: 220px;
     height: 3px;
     background-color: var(--secondary-color);
@@ -355,13 +354,46 @@ svg{
 /*skills end*/
 
 /*projects start*/
+#projects .row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
 
-#projects hr {
+#projects .item {
+    width: calc(50% - 20px); /* Réglage de la largeur pour deux cartes par ligne */
+    margin-bottom: 40px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); /* Ombre sur tous les côtés */
+    border-radius: 12px;
+    overflow: hidden;
+    transition: transform 0.3s ease-in-out;
+    margin-top: 6rem;
+    padding: 40px;
+  }
+#projects .item:hover {
+    transform: translateY(-5px);
+  }
+#projects .item h5 {
+    font-size: 15px;
+    margin-bottom: 10px;
+  }
+#projects .item p {
+  color: #555;
+  margin-bottom: 20px;
+}
+#projects .item hr {
     margin: 1rem 0;
-    color: inherit;
+    color: gray!important;
     border: 0;
-    border-top: 1px solid;
+    border-top: 1px solid gray;
     opacity: .25;
     
 }
+#projects .item .item-buttons {
+    justify-content: space-between;
+  }
+#projects .item .txt {
+    font-size: 14px;
+    color: #777;
+  }
 
