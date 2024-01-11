@@ -79,6 +79,7 @@ header .navbar {
     border-bottom: 1px solid #ccc;
     position: fixed;
     width: 100%;    
+    z-index: 1000;
 }
 header .navbar nav{
     display: flex;
