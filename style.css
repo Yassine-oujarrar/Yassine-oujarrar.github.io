@@ -8,6 +8,9 @@
     --bg-primary: #ecf0f3;
 
 }
+html {
+    scroll-behavior: smooth;
+}
 * {
     margin:0;
     padding: 0;
@@ -70,18 +73,18 @@ a {
     color: white;
 }
 /*header start*/
-header  {
+#home  {
     background-color: var(--bg-primary);
     height: 100vh;
 }
-header .navbar {
+#home .navbar {
     background-color: #fff;
     border-bottom: 1px solid #ccc;
     position: fixed;
     width: 100%;    
     z-index: 1000;
 }
-header .navbar nav{
+#home .navbar nav{
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -95,18 +98,18 @@ header .navbar nav{
     font-size: 24px;
     font-weight: 600;
 }
-header .navbar nav ul{
+#home .navbar nav ul{
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-header .navbar nav ul a{
+#home .navbar nav ul a{
     margin: 0 15px;
     color: var(--primary-color);
     font-weight: 600;
 }
-header .header-content{
+#home .header-content{
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -115,7 +118,7 @@ header .header-content{
     padding: 5rem 2rem 0;
     height: 100%;
 }
-header .header-content .content-text{
+#home .header-content .content-text{
     margin-bottom: 5rem;
 }
 .content-text .btn_primary{
@@ -125,7 +128,7 @@ header .header-content .content-text{
 }
 
 
-header .header-content img{
+#home .header-content img{
     width: 550px;
     display: flex;
     flex-direction: column;
@@ -161,18 +164,18 @@ header .header-content img{
 /*header end*/
 
 /*about start*/
-#about, #skills, #projects{
+#about, #skills, #projects, #contact{
     padding: 6rem 0rem;
 }
 
-#about h2, #skills h2, #projects h2{
+#about h2, #skills h2, #projects h2, #contact h2{
     text-align: center;
     font-size: 45px;
     color: var(--primary-color);
     font-weight: 600;
 
 }
-#about hr, #skills hr, #projects hr{
+#about hr, #skills hr, #projects hr,#contact hr{
     width: 220px;
     height: 3px;
     background-color: var(--secondary-color);
@@ -201,7 +204,7 @@ header .header-content img{
 
 /*skills start*/
 
-#skills{
+#skills, #contact{
     background-color: var(--bg-primary);
 }
 #skills h2{
@@ -398,3 +401,23 @@ svg{
     color: #777;
   }
 
+/* Get in touch*/
+
+#contact .content-text{
+    font-size: 20px;
+    margin-top: 5rem;
+    text-align: center;
+    color: var(--primary-color);    
+
+}
+#contact .content-text p {
+    font-size: 15px; 
+    margin-top: 2rem;
+}
+
+/* tablet responsive*/
+@media (max-width: 768px){
+    #home .navbar nav{
+        display: block;
+    }
+}
