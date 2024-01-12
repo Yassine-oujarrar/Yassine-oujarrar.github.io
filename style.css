@@ -112,6 +112,7 @@ a {
 #home .header-content{
     display: flex;
     align-items: center;
+    grid-template-columns: 1.5fr 1fr;
     justify-content: space-between;
     max-width: 1100px;
     margin: auto;
@@ -417,7 +418,38 @@ svg{
 
 /* tablet responsive*/
 @media (max-width: 768px){
+    body {
+        overflow-x: hidden;
+    }
     #home .navbar nav{
         display: block;
+        text-align: center;
+
     }
-}
+    #home .navbar nav ul{
+        margin-top: 20px;
+
+    }
+    #home .navbar nav ul a{
+        margin: 0 8px;
+    }
+
+    #home .header-content img{
+        max-width: 400px;
+        margin: auto;
+    }
+    #home .header-content h1{
+        font-size: 30px;
+    }
+    #about .about-content {
+        grid-template-columns: 1fr;
+        row-gap: 3rem;
+        font-size: 12px;
+    }
+    #skills .skills-section .alldonuts{
+        grid-template-columns: repeat(2, 1fr);
+    }
+    #projects .item{
+        width: calc(100% - 20px); /* Réglage de la largeur pour deux cartes par ligne */
+    }
+}   
