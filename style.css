@@ -110,7 +110,7 @@ a {
     font-weight: 600;
 }
 #home .header-content{
-    display: flex;
+    display: grid;
     align-items: center;
     grid-template-columns: 1.5fr 1fr;
     justify-content: space-between;
@@ -439,7 +439,7 @@ svg{
         margin: auto;
     }
     #home .header-content h1{
-        font-size: 30px;
+        font-size: 38px;
     }
     #about .about-content {
         grid-template-columns: 1fr;
@@ -453,3 +453,54 @@ svg{
         width: calc(100% - 20px); /* Réglage de la largeur pour deux cartes par ligne */
     }
 }   
+
+/* tablet responsive*/
+@media (max-width: 528px){
+
+    #home .header-content h1{
+        font-size: 34px;
+    }
+    #home .header-content{
+
+        grid-template-columns: repeat(1, 1fr) !important;
+    }
+    #home .header-content .content-text{
+        margin-bottom: 0rem;
+        margin-top: 5rem;
+    }
+    #home .header-content img{
+        max-width: 350px;
+        margin-top: 1rem;
+    }
+    #home .header-content p span {
+        font-size: 16px;
+    }
+    #home .header-content .title{
+        font-size: 16px;
+    }
+    #about h2, #skills h2, #projects h2, #contact h2{
+        font-size: 30px;
+    }
+    
+    #about .about-content .col-1 h3{
+        font-size: 20px;
+    }
+    #projects .item{
+        width: calc(100% - 20px); /* Réglage de la largeur pour deux cartes par ligne */
+        margin-top: 2rem;
+    }
+    #projects .item .item-buttons {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+    #contact .content-text{
+        font-size: 15px;  
+    
+    }
+    #contact .content-text p {
+        font-size: 12px; 
+    }
+
+
+}
