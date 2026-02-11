@@ -336,6 +336,8 @@ svg{
     grid-template-columns: repeat(4, 1fr);
     align-items: center;
     text-align: center;
+    justify-content: center;
+    justify-items: center;
 }
 #skills .skills-section .alldonuts .skills-content{
     color: #033b4a;
@@ -507,91 +509,193 @@ svg{
     margin-top: 2rem;
 }
 
-/* tablet responsive*/
+/* Mobile responsive */
 @media (max-width: 768px){
     body {
         overflow-x: hidden;
     }
+    
+    /* Navigation improvements */
     #home .navbar nav{
         display: block;
         text-align: center;
-
+        padding: 1rem 1rem;
     }
+    
     #home .navbar nav ul{
-        margin-top: 20px;
-
+        margin-top: 15px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 10px;
     }
+    
     #home .navbar nav ul a{
-        margin: 0 8px;
+        margin: 0 5px;
+        padding: 8px 12px;
+        border-radius: 5px;
+        font-size: 14px;
     }
-
-    #home .header-content img{
-        max-width: 400px;
-        margin: auto;
-    }
-    #home .header-content h1{
-        font-size: 38px;
-    }
-    #about .about-content {
+    
+    /* Header content improvements */
+    #home .header-content {
         grid-template-columns: 1fr;
-        row-gap: 3rem;
-        font-size: 12px;
+        text-align: center;
+        padding: 3rem 1rem 0;
     }
-    #skills .skills-section .alldonuts{
-        grid-template-columns: repeat(2, 1fr);
-    }
-    #projects .item{
-        width: calc(100% - 20px); /* Réglage de la largeur pour deux cartes par ligne */
-    }
-}   
-
-/* tablet responsive*/
-@media (max-width: 528px){
-
-    #home .header-content h1{
-        font-size: 34px;
-    }
-    #home .header-content{
-
-        grid-template-columns: repeat(1, 1fr) !important;
-    }
-    #home .header-content .content-text{
-        margin-bottom: 0rem;
-        margin-top: 5rem;
-    }
+    
     #home .header-content img{
-        max-width: 350px;
-        margin-top: 1rem;
+        max-width: 300px;
+        margin: 2rem auto 0;
+        display: block;
     }
-    #home .header-content p span {
-        font-size: 16px;
+    
+    #home .header-content h1{
+        font-size: 32px;
+        line-height: 1.2;
     }
+    
     #home .header-content .title{
         font-size: 16px;
     }
-    #about h2, #skills h2, #projects h2, #contact h2{
-        font-size: 30px;
+    
+    #home .header-content .social {
+        justify-content: center;
+        gap: 15px;
+    }
+    
+    #home .header-content .social a i {
+        font-size: 40px;
+    }
+    
+    /* About section improvements */
+    #about .about-content {
+        grid-template-columns: 1fr;
+        row-gap: 2rem;
+        padding: 2rem 1rem;
     }
     
     #about .about-content .col-1 h3{
-        font-size: 20px;
+        font-size: 22px;
     }
+    
+    #about .about-content p{
+        font-size: 14px;
+        line-height: 1.6;
+    }
+    
+    /* Skills section improvements */
+    #skills .skills-section .alldonuts{
+        grid-template-columns: repeat(2, 1fr);
+        gap: 2rem;
+        padding: 2rem 1rem;
+    }
+    
+    #skills .skills-section .alldonuts .skills-content{
+        margin: 15px;
+        font-size: 12px;
+    }
+    
+    /* Soft skills section improvements */
+    #soft-skills .soft-skills-grid {
+        grid-template-columns: 1fr;
+        gap: 1.5rem;
+        padding: 2rem 1rem;
+    }
+    
+    #soft-skills .skill-card {
+        padding: 1.5rem;
+    }
+    
+    #soft-skills .skill-icon {
+        font-size: 30px;
+        height: 50px;
+        width: 50px;
+    }
+    
+    /* Projects section improvements */
     #projects .item{
-        width: calc(100% - 20px); /* Réglage de la largeur pour deux cartes par ligne */
-        margin-top: 2rem;
+        width: 100%;
+        margin-bottom: 2rem;
+        padding: 2rem;
     }
+    
+    #projects .item h5 {
+        font-size: 16px;
+    }
+    
+    #projects .item p {
+        font-size: 14px;
+    }
+    
     #projects .item .item-buttons {
         display: flex;
-        flex-wrap: wrap;
-        justify-content: space-between;
+        flex-direction: column;
+        gap: 10px;
     }
-    #contact .content-text{
-        font-size: 15px;  
     
+    #projects .item .btn_secondary {
+        text-align: center;
     }
+    
+    /* Contact section improvements */
+    #contact .content-text{
+        font-size: 16px;
+        padding: 2rem 1rem 4rem;
+    }
+    
     #contact .content-text p {
-        font-size: 12px; 
+        font-size: 13px;
+        margin-top: 1.5rem;
     }
+}
 
-
+/* Small mobile devices */
+@media (max-width: 480px){
+    #home .header-content h1{
+        font-size: 28px;
+    }
+    
+    #home .header-content .social a i {
+        font-size: 35px;
+    }
+    
+    #about h2, #skills h2, #projects h2, #contact h2{
+        font-size: 26px;
+    }
+    
+    #skills .skills-section .alldonuts{
+        grid-template-columns: 1fr;
+        gap: 1.5rem;
+    }
+    
+    #skills .skills-section .alldonuts .skills-content{
+        margin: 10px;
+    }
+    
+    #projects .item{
+        padding: 1.5rem;
+    }
+    
+    #projects .item h5 {
+        font-size: 14px;
+    }
+    
+    #projects .item p {
+        font-size: 13px;
+    }
+    
+    #contact .content-text{
+        font-size: 14px;
+        padding: 1.5rem 1rem 3rem;
+    }
+    
+    #contact .content-text p {
+        font-size: 12px;
+    }
+    
+    /* Container padding adjustments */
+    .container {
+        padding: 0 1.5rem;
+    }
 }
